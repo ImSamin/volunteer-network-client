@@ -1,0 +1,37 @@
+.parent-div {
+  display: flex;
+  justify-content: center;
+  margin: -200px 100px 0 100px;
+}
+.task {
+  margin: 50px 0 10px 0;
+  width: 300px;
+  overflow: hidden;
+  z-index: 1;
+  padding-left: ;
+}
+.task-img {
+  overflow: hidden;
+  width: 250px;
+  height: 200px;
+}
+
+.task-img img {
+  height: 250px;
+  width: 250px;
+  border-radius: 20px 20px 0px 0px;
+
+}
+
+.task-name {
+  background-color:#3F90FC;;
+  height: 50px;
+  width: 250px;
+  border-radius: 0 0 10px 10px;
+}
+
+.task-name p {
+  color: #fff;
+  padding-top: 10px;
+  text-align: center;
+}

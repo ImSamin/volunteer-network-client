@@ -1,0 +1,22 @@
+.admin-btn{
+    background: #434141;
+
+}
+
+button.register-btn.btn{
+    color: #fff;
+    padding: 1px 5px
+
+}
+
+.display-name{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height */
+
+
+
+}
