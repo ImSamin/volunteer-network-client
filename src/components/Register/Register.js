@@ -19,7 +19,7 @@ const Register = () => {
     }
 
     useEffect(() => {
-        fetch('http://localhost:5000/tasks')
+        fetch('https://blooming-inlet-19483.herokuapp.com/tasks')
             .then(res => res.json())
             .then(data => {
                 setTasks(data)
@@ -29,7 +29,7 @@ const Register = () => {
 
     const onSubmit = (data) => {
         const userTask = data;
-        fetch("http://localhost:5000/addUserTask", {
+        fetch("https://blooming-inlet-19483.herokuapp.com/addUserTask", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

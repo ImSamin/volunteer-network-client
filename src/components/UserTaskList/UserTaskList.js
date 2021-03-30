@@ -10,7 +10,7 @@ const UserTaskList = (task) => {
     
 
     const handleCancel = (task) => {
-        fetch(`http://localhost:5000/delete/${_id}`,{
+        fetch(`https://blooming-inlet-19483.herokuapp.com/delete/${_id}`,{
             method: 'DELETE',
         })
         .then(res => res.json())

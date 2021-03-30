@@ -9,7 +9,7 @@ const UserProfile = () => {
     const [userTasks, setUserTasks] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/userTasks?email=" + loggedInUser.email, {
+        fetch("https://blooming-inlet-19483.herokuapp.com/userTasks?email=" + loggedInUser.email, {
             method:'GET',
             headers: {
                 "Content-Type": "application/json",
