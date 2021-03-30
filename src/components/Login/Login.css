@@ -1,13 +1,13 @@
 .login-parent-container {
-    display: flex;
-    justify-content: center;
-    background-color:#E5E5E5;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #e5e5e5;
+  height: 100vh;
 }
-.login-img-logo{
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
+.login-img-logo {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
 }
 .login-img-logo img {
   width: 202.81px;
@@ -15,29 +15,27 @@
 }
 
 .form-parent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #ABABAB;
-    margin: 100px 0 0 0;
-    background-color: white;
-    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ababab;
+  margin: 100px 0 0 0;
+  background-color: white;
 }
 
-.form-child{
+.form-child {
   padding: 100px 20px;
 }
 
-.form-child h3{
- text-align: center;
- font-weight: 600;
- font-family: Montserrat;
+.form-child h3 {
+  text-align: center;
+  font-weight: 600;
+  font-family: Montserrat;
 }
 
-.signIn-btn{
-    padding: 20px;
-    display: flex;
-    
+.signIn-btn {
+  padding: 20px;
+  display: flex;
 }
 
 .btn.btnsingIn {
@@ -54,21 +52,18 @@
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-
-  /* identical to box height */
-
   color: #000000;
 }
 
-.signIn-p{
-    text-align: center;
+.signIn-p {
+  text-align: center;
 }
 
-.icon{
+.icon {
   float: left;
 }
 
-.p{
-    text-align: center;
-    font-family: Montserrat;
+.p {
+  text-align: center;
+  font-family: Montserrat;
 }

@@ -1,7 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Home from "./components/Home/Home";
-import Navbar from "./components/Navbar.js/Navbar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Login from "./components/Login/Login";
 import Register from "./components/Register/Register";

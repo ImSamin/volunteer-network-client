@@ -1,17 +1,16 @@
 import React, { useContext } from 'react';
 import logo from '../../volunteer-network-main/logos/Group 1329.png'
-import css from './Navbar.css'
+import './Navbar.css'
 
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink, NavAdminBtnLink } from "./MenuItems";
 import { useHistory } from 'react-router';
 import { userContext } from '../../App';
-import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(userContext);
     const history = useHistory()
     const handleRegisterBtn = () => {
-        history.push = ('/register');
+        history.push = ('/login');
     }
     return (
         <div className="">
@@ -27,7 +26,7 @@ const Navbar = () => {
                     <NavLink to="/donation" activeStyle>
                         Donation
                     </NavLink>
-                    <NavLink to="/events" activeStyle>
+                    <NavLink to="/user" activeStyle>
                         Events
                     </NavLink>
                     <NavLink to="/blog" activeStyle>
@@ -40,7 +39,7 @@ const Navbar = () => {
                             </NavLink> 
                             :
                             <div>
-                                    <NavBtnLink className="register-btn btn" to="/register"><button OnClick={handleRegisterBtn} className="register-btn btn ">Register</button></NavBtnLink>
+                                    <NavBtnLink className="register-btn btn" to="/login"><button OnClick={handleRegisterBtn} className="register-btn btn ">Register</button></NavBtnLink>
                                     <NavAdminBtnLink className="admin-btn" to="">Admin</NavAdminBtnLink>
                             </div> 
                         }

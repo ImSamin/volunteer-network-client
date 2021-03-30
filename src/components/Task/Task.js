@@ -8,7 +8,6 @@ const Task = ({ task }) => {
     
     const handleTask = () => {
         history.push(`/register/task/${taskId}`)
-        console.log('clicked', taskId);
     }
 
     return (

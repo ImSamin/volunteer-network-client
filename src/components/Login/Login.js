@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 import logo from '../../volunteer-network-main/logos/Group 1329.png'
 import google from '../../volunteer-network-main/logos/google.png'
@@ -18,7 +18,6 @@ const Login = () => {
     let  {from} = location.state || {from: {pathname: "/" }}
     const [loggedInUser, setLoggedInUser] = useContext(userContext);
 
-    // console.log(loggedInUser);
 
     const handleGoogleLogin = () => {
         const provider = new firebase.auth.GoogleAuthProvider();
@@ -35,7 +34,6 @@ const Login = () => {
     const storeAuthToken = () => {
         firebase.auth().currentUser.getIdToken(true)
         .then(function(idToken) {
-            console.log(idToken);
             sessionStorage.setItem('token', idToken);
         }).catch(function(error) {
 

@@ -31,7 +31,7 @@ const Home = () => {
       </div>
 
       <div className="row parent-div">
-        {tasks && tasks.map((task) => <Task task={task}></Task>)}
+        {tasks && tasks.map((task) => <Task task={task} key={task.id}></Task>)}
       </div>
     </>
   );

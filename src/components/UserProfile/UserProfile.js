@@ -30,7 +30,7 @@ const UserProfile = () => {
            <div className="container-fluid utl-main-div">
                 <div className=" container row utl-parent-div">
                     {
-                        userTasks.map((task) => <UserTaskList task={task} id={task._id}></UserTaskList>)
+                        userTasks.map((task) => <UserTaskList task={task} id={task._id} key={task._id}></UserTaskList>)
                     }
                 </div>
 
